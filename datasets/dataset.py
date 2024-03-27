@@ -85,7 +85,7 @@ class VOCSegmentDataset(Dataset):
         height_resize = int(height * resize_coef)
         width_resize = int(height_resize * self.width_gen / self.height_gen)
     
-        print(f"Resize shape: ({height_resize}, {width_resize})")
+        # print(f"Resize shape: ({height_resize}, {width_resize})")
         
         center_crop = torchvision.transforms.Compose([
                                 torchvision.transforms.Resize((height_resize, width_resize),
